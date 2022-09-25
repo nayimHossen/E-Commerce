@@ -2,10 +2,10 @@ const app = require("./app");
 const dotenv = require("dotenv");
 const connectDatabase = require("./config/mongoConnection");
 
-//config
+//CONFIG
 dotenv.config({ path: "backend/config/config.env" });
 
-//database connect
+//DATABASE CONNECTION
 connectDatabase();
 
 app.listen(process.env.PORT, () => {
